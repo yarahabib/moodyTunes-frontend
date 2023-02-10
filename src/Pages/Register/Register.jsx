@@ -62,7 +62,10 @@ const Register = () => {
         inputs.username !== '' &&
         inputs.password !== ''
       ) {
-        await axios.post('http://localhost:8800/api/auth/register', inputs);
+        await axios.post(
+          'https://moody-api.onrender.com/api/auth/register',
+          inputs
+        );
         setIsLoading(false);
         navigate('/form');
       } else if (
