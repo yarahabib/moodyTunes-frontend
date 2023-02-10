@@ -17,7 +17,8 @@ const Contact = () => {
     const messageInput = form.current.elements.message;
 
     if (!nameInput.value || !emailInput.value || !messageInput.value) {
-      setTimeout(() => setErrorMessage('All fields are required!!'), 3000);
+      setErrorMessage('All fields are required!');
+      setTimeout(() => setErrorMessage(''), 3000);
       return;
     }
 
@@ -53,13 +54,12 @@ const Contact = () => {
           <input type='email' name='user_email' placeholder='Email' />
           <textarea name='message' placeholder='Message' />
           {errorMessage && <div className='error'>{errorMessage}</div>}
-          {successMessage && (
-            <div style={{ color: 'green' }}>{successMessage}</div>
-          )}
+          {successMessage && <div className='success'>{successMessage}</div>}
 
           <input type='submit' value='Send' />
         </form>
       </div>
+
       <div className='right'>
         <p>
           <a href='tel:+96170581697'>

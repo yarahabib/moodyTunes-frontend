@@ -43,6 +43,11 @@ a {
   margin-top: 1rem;
   color: var(--red);
 }
+
+.success {
+  margin-top: 1rem !important;
+  color: green;
+}
 .contact form {
   padding: auto;
   margin: auto;
