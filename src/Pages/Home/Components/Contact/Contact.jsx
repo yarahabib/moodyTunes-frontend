@@ -17,7 +17,7 @@ const Contact = () => {
     const messageInput = form.current.elements.message;
 
     if (!nameInput.value || !emailInput.value || !messageInput.value) {
-      setErrorMessage('All fields are required!!');
+      setTimeout(() => setErrorMessage('All fields are required!!'), 3000);
       return;
     }
 
