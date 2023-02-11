@@ -35,10 +35,12 @@
   color: var(--secondaryColor) !important;
   font-size: 1.5rem;
 }
+
 a {
   text-decoration: none;
   color: white !important;
 }
+
 .error {
   margin-top: 1rem;
   color: var(--red);
@@ -48,6 +50,7 @@ a {
   margin-top: 1rem !important;
   color: green;
 }
+
 .contact form {
   padding: auto;
   margin: auto;
@@ -112,6 +115,16 @@ a {
   height: 400px;
 }
 
+.right a:hover {
+  color: var(--secondaryColor) !important;
+  transition: ease-out all 300ms;
+}
+
+.send-btn:hover {
+  color: black !important;
+  transition: ease-in-out all 300ms;
+}
+
 @media (max-width: 767px) {
   .contact {
     display: flex;
@@ -120,6 +133,7 @@ a {
     align-items: center;
     width: 100%;
   }
+
   .left {
     width: 100%;
     margin-left: 0;
@@ -131,6 +145,7 @@ a {
     flex-direction: row;
     width: 100%;
   }
+
   p {
     padding-right: 1rem;
   }
@@ -145,6 +160,7 @@ a {
     width: 100%;
   }
 }
+
 @media (max-height: 1400px) and (max-width: 1000px) {
   .contact {
     min-height: auto;
