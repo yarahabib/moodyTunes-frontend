@@ -110,6 +110,13 @@ a {
   border: none;
 }
 
+.contact input[type='submit']:hover {
+  background: transparent !important;
+  color: var(--secondaryColor) !important;
+  border: 1px solid orange !important;
+  transition: ease-out all 300ms;
+}
+
 .contact-img {
   width: 600px;
   height: 400px;
@@ -118,11 +125,6 @@ a {
 .right a:hover {
   color: var(--secondaryColor) !important;
   transition: ease-out all 300ms;
-}
-
-.send-btn:hover {
-  color: black !important;
-  transition: ease-in-out all 300ms;
 }
 
 @media (max-width: 767px) {
